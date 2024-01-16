@@ -1,0 +1,42 @@
+<!-- Página 2: Matrícula de aluno -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Matrícula de aluno</title>
+    <link rel="stylesheet" href="style/estilo.css">
+</head>
+<body>
+    <div id="logo">
+        <img src="Imagem/logo.png" alt="Logo da Escola Mundo Feliz">
+        <h1>Escola Mundo Feliz</h1>
+    </div>
+    <div id="menu">
+        <button onclick="window.location.href='index.html'">Voltar</button>
+    </div>
+    <div id="conteudo">
+        <h2>Matrícula de aluno</h2>
+        <form id="form-matricula" method="POST" action="PHP/matricular.php">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="6" max="15" required>
+            <label for="turma">Turma:</label>
+            <select id="turma" name="turma" required>
+                <option value="">Selecione uma turma</option>
+                <option value="1">Turma 1</option>
+                <option value="2">Turma 2</option>
+                <option value="3">Turma 3</option>
+                <option value="4">Turma 4</option>
+                <option value="5">Turma 5</option>
+                <option value="6">Turma 6</option>
+                <option value="7">Turma 7</option>
+                <option value="8">Turma 8</option>
+                <option value="9">Turma 9</option>
+            </select>
+            <label for="data">Data de nascimento:</label>
+            <input type="date" id="data" name="data" required>
+            <input type="submit" value="Matricular">
+        </form>
+    </div>
+</body>
+</html>

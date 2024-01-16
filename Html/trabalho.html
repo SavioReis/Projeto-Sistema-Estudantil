@@ -1,0 +1,38 @@
+<!-- Página 1: Escola Mundo Feliz -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Escola Mundo Feliz</title>
+    <link rel="stylesheet" href="style/estilo.css">
+</head>
+<body>
+    <div id="logo">
+        <img src="Imagem/logo.png" alt="Logo da Escola Mundo Feliz">
+        <h1>Escola Mundo Feliz</h1>
+    </div>
+    <div id="menu">
+        <button onclick="window.location.href='Html/matricula.html'">Matricular aluno</button>
+        <button onclick="window.location.href='Html/busca.html'">Procurar Aluno</button>
+        <button onclick="window.location.href='Html/professor.html'">Cadastrar Professor</button>
+        <button onclick="window.location.href='PHP/professor.php'">Professores Cadastrados</button>
+        <select id="turmas" onchange="window.location.href=this.value">
+            <option value="">Selecione uma turma</option>
+            <option value="PHP/turma1.php">Turma 1</option>
+            <option value="PHP/turma2.php">Turma 2</option>
+            <option value="PHP/turma3.php">Turma 3</option>
+            <option value="PHP/turma4.php">Turma 4</option>
+            <option value="PHP/turma5.php">Turma 5</option>
+            <option value="PHP/turma6.php">Turma 6</option>
+            <option value="PHP/turma7.php">Turma 7</option>
+            <option value="PHP/turma8.php">Turma 8</option>
+            <option value="PHP/turma9.php">Turma 9</option>
+        </select>
+    </div>
+    <div id="conteudo">
+        <h2>Trabalho Banco de Dados</h2>
+        <p>Projeto : Escola</p>
+        <p>Professor : Fernando</p>
+        <p>Alunos: Sávio Reis de Lima Gonçalves , Gustavo Henrique Kermes e Gabriel Godinho</p>
+    </div>
+</body>
+</html>
